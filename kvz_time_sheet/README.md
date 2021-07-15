@@ -20,7 +20,7 @@ to any project's task.
 
 ## Screenshots
 
-![App Gif](static/description/Image_0.gif)
+![App Gif](https://github.com/sc2-zobka/Kuvasz/blob/main/kvz_time_sheet/static/description/image_0.gif)
   
 ## Used By
 
