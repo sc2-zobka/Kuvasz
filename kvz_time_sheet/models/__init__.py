@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import timesheet
+from . import timesheet, res_config_settings

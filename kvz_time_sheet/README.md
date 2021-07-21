@@ -1,22 +1,26 @@
-# KVZ TimeSheet
+# Kuvasz Timesheet Extension
 
 Odoo 14 TimeSheet module extension to restrict adding timesheet lines
 to any project's task.
 
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://opensource.org/licenses/)
+[![GPLv3 License](https://img.shields.io/badge/License-MIT%20-blue.svg)](https://opensource.org/licenses/)
 [![v14 Odoo](https://img.shields.io/badge/Tech-Odoo%20v14-purple.svg)](##)
 [![Project Odoo](https://img.shields.io/badge/Odoo_14-Project%20Module-green.svg)](##)
 [![Timesheet Odoo](https://img.shields.io/badge/Odoo_14-Timesheet%20Module-red.svg)](##)
 
+## How to use
+
+- Set number of restricted days at "Settings -> Kuvasz Extension"
+
 ## Features to restrict
 
-- Adding hours to a date past today 
+- Adding hours to a date past today
 - Adding hours seven or more days before today
 
 ## Views routes
 
-- Project_App/project/task/Timesheet -> Form view
-- Timesheet_App/timesheet -> List view
+- Project App/project/task/timesheet_lines -> Form view
+- Timesheet App/timesheet_lines -> List view
 
 ## Screenshots
 
@@ -30,5 +34,5 @@ This project is used by the following companies:
 
 ## Authors
 
-- [@sc2-zobka](https://github.com/sc2-zobka)
+- [@sc2-zobka](https://github.com/sc2-zobka) - Mathias Gonzalez Bocaz
   
