@@ -1,7 +1,7 @@
 # Kuvasz Timesheet Extension
 
 Odoo 14 TimeSheet module extension to restrict adding timesheet lines
-to any project's task.
+to any project's task based on user's timezone.
 
 [![GPLv3 License](https://img.shields.io/badge/License-MIT%20-blue.svg)](https://opensource.org/licenses/)
 [![v14 Odoo](https://img.shields.io/badge/Tech-Odoo%20v14-purple.svg)](##)
@@ -10,12 +10,12 @@ to any project's task.
 
 ## How to use
 
-- Set number of restricted days at "Settings -> Kuvasz Extension"
+- Set number of restricted days at "Settings -> Kuvasz Extension".
 
 ## Features to restrict
 
-- Adding hours to a date past today
-- Adding hours seven or more days before today
+- Adding hours to a project's task on a date past today.
+- Adding hours to a project's task "n" days before today.
 
 ## Views routes
 
