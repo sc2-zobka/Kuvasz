@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- res.config.settings inherit form view -->
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.inherit.view.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div class="app_settings_block" string="Kuvasz Extension" data-key="kvz_time_sheet">
+                    <h2>Kuvasz Timesheets Extension Control</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane"/>
+                            <div class="o_setting_right_pane">
+                                <div class="row">
+                                    <div class="text-muted col-md-12">
+                                        Days unit used to restrict adding hours to a project's task
+                                    </div>
+                                </div>
+                                <label for="days_before_today" string="Restricted days before today"/>
+                                <field name="days_before_today" class="oe_inline col-lg-2"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
