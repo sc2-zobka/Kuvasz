@@ -16,6 +16,9 @@ to any project's task based on user's timezone.
 
 - Adding hours to a project's task on a date past today.
 - Adding hours to a project's task "n" days before today.
+- Adding negative hours/minutes.
+- Adding zero hours as a value.
+- Default value set to 1 hour.
 
 ## Views routes
 

@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api, _
+from odoo.tools import float_is_zero
 from odoo.exceptions import ValidationError
 
 
 class TimeSheetInherited(models.Model):
     _inherit = "account.analytic.line"
+    
+    unit_amount = fields.Float(default=1) 
 
     @api.onchange("date")
     def _check_days(self):
@@ -33,3 +36,12 @@ class TimeSheetInherited(models.Model):
 
             if delta.days > days:
                 raise ValidationError(_("Fecha no permitida"))
+
+    @api.onchange("unit_amount")
+    def _check_unit_amount(self):
+        """ check for unit_amount field with zero or negative hours"""
+
+        if float_is_zero(self.unit_amount, precision_digits=3) is True:
+            raise ValidationError (_("Horas ingresadas no pueden ser cero"))
+        elif self.unit_amount < 0:
+            raise ValidationError(_("Horas ingresadas no pueden ser negativas"))
