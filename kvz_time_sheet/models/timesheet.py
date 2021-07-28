@@ -41,7 +41,7 @@ class TimeSheetInherited(models.Model):
     def _check_unit_amount(self):
         """ check for unit_amount field with zero or negative hours"""
 
-        if float_is_zero(self.unit_amount, precision_digits=3) is True:
+        if float_is_zero(self.unit_amount, precision_digits=3):
             raise ValidationError (_("Horas ingresadas no pueden ser cero"))
         elif self.unit_amount < 0:
             raise ValidationError(_("Horas ingresadas no pueden ser negativas"))
